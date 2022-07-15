@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/style/colors.dart';
+
+import 'colors.dart';
 
 class PrimaryText extends StatelessWidget {
   final double size;
@@ -9,7 +10,7 @@ class PrimaryText extends StatelessWidget {
   final double height;
 
   const PrimaryText({
-    this.text,
+    required this.text,
     this.fontWeight: FontWeight.w400,
     this.color: AppColors.primary,
     this.size: 20,

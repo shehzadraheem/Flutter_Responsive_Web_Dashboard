@@ -7,25 +7,22 @@ class Responsive extends StatelessWidget {
   final Widget smallMobile;
 
   const Responsive({
-    Key key,
-    @required this.mobile,
-    this.tablet,
-    @required this.desktop,
-    this.smallMobile
+    required Key key,
+    required this.mobile,
+    required this.tablet,
+    required this.desktop,
+    required this.smallMobile
   }) : super(key: key);
 
 // This size work fine on my design, maybe you need some customization depends on your design
 
-  // This isMobile, isTablet, isDesktop helep us later
-  static bool isMobile(BuildContext context) =>
-      MediaQuery.of(context).size.width < 768;
+  // This isMobile, isTablet, isDesktop help us later
+  static bool isMobile(BuildContext context) => MediaQuery.of(context).size.width < 768;
 
-  static bool isTablet(BuildContext context) =>
-      MediaQuery.of(context).size.width < 1200 &&
+  static bool isTablet(BuildContext context) => MediaQuery.of(context).size.width < 1200 &&
       MediaQuery.of(context).size.width >= 768;
 
-  static bool isDesktop(BuildContext context) =>
-      MediaQuery.of(context).size.width >= 1200;
+  static bool isDesktop(BuildContext context) => MediaQuery.of(context).size.width >= 1200;
 
   @override
   Widget build(BuildContext context) {
