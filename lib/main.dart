@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: AppColors.primaryBg
       ),
-      home: DashBoard(),
+      home: Dashboard(),
     );
   }
 }
